@@ -1,22 +1,19 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
 
-import NavBar from "./components/NavBar"
-import AboutUs from "./components/AboutUs"
-import Trip from "./components/Trip"
-import ContactForm from "./components/ContactForm"
+import HomePage from "./pages/HomePage"
+import AboutPage from "./pages/AboutPage"
+import TourPage from "./pages/TourPage"
+import ContactPage from "./pages/ContactPage"
 
 const App = () => {
   return (
     <div className="App">
-      <NavBar />
-      App
       <Routes>
-        {/* <Route path="/" element={<Hero />} />
-        <Route path="/destination" element={<Destination />} /> */}
-        <Route path="/tours" element={<Trip />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/tours" element={<TourPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </div>
   )
